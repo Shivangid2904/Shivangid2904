@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Playfair+Display&weight=500&size=32&duration=3500&pause=1200&color=C9B8F0&center=true&vCenter=true&width=600&lines=Shivangi+Dubey;AI+%26+ML+Engineer;AWS+Certified+Cloud+Practitioner" alt="Shivangi Dubey" />
+<img src="https://readme-typing-svg.demolab.com?font=Playfair+Display&weight=500&size=32&duration=3500&pause=1200&color=C9B8F0&center=true&vCenter=true&width=600&lines=Shivangi+Dubey;AI+%26+ML+Enthusiast;AWS+Certified+Cloud+Practitioner" alt="Shivangi Dubey" />
 
 <br/>
 
