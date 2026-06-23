@@ -10,7 +10,7 @@
 <a href="mailto:shivangi.d2904@gmail.com">
   <img src="https://img.shields.io/badge/Gmail-C9B8F0?style=for-the-badge&logo=gmail&logoColor=1a1a2e"/>
 </a>&nbsp;
-<a href="YOUR_RESUME_LINK_HERE">
+<a href="https://drive.google.com/file/d/1lCXme23zL50PrehgWtcn2wvx_QKc_ObN/view?usp=sharing">
   <img src="https://img.shields.io/badge/Resume-C9B8F0?style=for-the-badge&logo=googledrive&logoColor=1a1a2e"/>
 </a>&nbsp;
 <img src="https://komarev.com/ghpvc/?username=Shivangid2904&style=for-the-badge&color=C9B8F0&label=Visitors"/>
