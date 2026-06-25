@@ -56,7 +56,7 @@ I care about writing clean code, designing thoughtful systems, and building tech
 
 ### Projects
 
-**[SafeHer AI](YOUR_SAFEHER_REPO_LINK_HERE)** *(In Progress)*
+**[SafeHer AI](https://github.com/Shivangid2904/safeher-ai)** *(In Progress)*
 AI-powered women's safety prototype — risk scoring (0–100) using ML models, Dijkstra-based safe route optimization, and real-time location alerting.
 
 **[Intelligent Question Answering System](https://github.com/Shivangid2904/Intelligent-Question-Answering-System)**
