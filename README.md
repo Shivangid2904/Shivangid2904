@@ -30,27 +30,23 @@
 
 ### 🌸 About
 
-I study Computer Science with an AI & Machine Learning specialization at SRM University AP.
+I'm a Computer Science student at SRM University AP, specializing in AI & Machine Learning.
 
-For me, building software always starts with curiosity: *What if a navigation system understood when an area feels unsafe? Can we mathematically catch the quiet signs of a habitable planet in noisy telescope data? Why send confidential documents across the internet when a local model can reason about them on your own machine?*
+Most of what I build starts with a question I can't quite shake:
+- *What if navigation understood when an area feels unsafe, rather than just calculating the fastest route?*
+- *Can we find subtle signs of habitability in messy, imbalanced astronomical data?*
+- *Why send confidential documents to external APIs when local models can search and reason over them on your own machine?*
 
-My work naturally bridges two core areas: **machine intelligence** and **cloud architecture**. I care about designing systems that are grounded in solid mathematics, respectful of privacy, and resilient when deployed into production.
-
-My technical interests gravitate around:
-- 🧠 **Machine Intelligence:** Local-first RAG pipelines, dense vector retrieval, and model explainability
-- ☁️ **Cloud Systems:** Event-driven serverless architectures, decoupled pipelines, and least-privilege security on AWS
-- 🌌 **Scientific & Space Data:** Machine learning applied to astronomical catalogs and planetary telemetry
-- 🔐 **Cybersecurity:** Automated vulnerability ingestion and threat intelligence
-- 🌸 **Human-Centered Technology:** Designing intelligent prototypes that directly protect and assist people
+I spend most of my time exploring the space between machine learning and cloud systems—building prototypes, learning where models break, and figuring out how to turn ideas into clean, functional software.
 
 ---
 
 ### ✦ Things I've Been Curious Enough to Build
 
-#### 🌸 [SafeHer AI](https://github.com/Shivangid2904/safeher-ai) `Active Prototype`
+#### 🌸 [SafeHer AI](https://github.com/Shivangid2904/safeher-ai)
 > *"What if a map could understand when a route feels unsafe — rather than just calculating the shortest distance?"*
 
-A safety-aware geospatial navigation prototype designed to prioritize personal safety over pure transit speed. The system imports road networks from OpenStreetMap into PostgreSQL/PostGIS with GiST spatial indexing and builds a directed graph with NetworkX. It computes a segment-by-segment **SafeHer Risk Index (SRI 0–100)** incorporating street lighting, road hierarchy, and proximity buffers around Safe Havens (police stations, hospitals, pharmacies). A modified Dijkstra routing engine evaluates multi-objective paths (`fastest`, `balanced`, `safest`) while dynamically factoring in community incident reports with a 7-day exponential time-decay model.
+A safety-aware navigation prototype that explores routing based on personal safety rather than pure travel time. The system pulls road networks from OpenStreetMap into PostGIS and builds a directed graph with NetworkX. It calculates a segment-level SafeHer Risk Index (0–100) using lighting, road types, and proximity to safe havens (like hospitals and police stations), then runs a modified Dijkstra algorithm to find lower-risk paths.
 
 `Python` · `PostGIS` · `NetworkX` · `OSMnx` · `Dijkstra Algorithm` · `Flask API` · `Streamlit`
 
@@ -58,14 +54,14 @@ A safety-aware geospatial navigation prototype designed to prioritize personal s
 
 ---
 
-#### 🧠 [IntelliAsk — Intelligent Question Answering System](https://github.com/Shivangid2904/Intelligent-Question-Answering-System)
+#### 🧠 [IntelliAsk — Question Answering System](https://github.com/Shivangid2904/Intelligent-Question-Answering-System)
 > *"Why send private documents to an external API when your own machine can search and reason over them?"*
 
-A local-first, privacy-preserving Retrieval-Augmented Generation (RAG) platform. To ensure zero data leakage and avoid recurring API costs, IntelliAsk processes documents locally: chunking PDFs, generating dense vector embeddings via Sentence Transformers, and indexing them in FAISS. The pipeline pairs semantic vector search with keyword matching for hybrid relevance scoring, feeding the most relevant passages to on-device quantized LLMs via Ollama for grounded answer generation with supporting passage attribution and persistent session history.
+A local-first, privacy-oriented Question Answering platform built on Retrieval-Augmented Generation (RAG). It chunks and embeds PDF documents with Sentence Transformers, indexes them locally in FAISS, and combines semantic similarity with keyword matching for hybrid retrieval. Relevant passages are then passed to an on-device quantized LLM through Ollama, generating grounded answers without sending any data over the network.
 
-`documents` → `Sentence Transformers` → `FAISS vector index` → `hybrid retrieval` → `local LLM (Ollama)` → `grounded answer`
+`documents` → `Sentence Transformers` → `FAISS vector index` → `hybrid retrieval` → `local LLM (Ollama)` → `answer`
 
-`Python` · `FAISS` · `Sentence Transformers` · `Ollama (Local LLMs)` · `Streamlit` · `RAG Architecture`
+`Python` · `FAISS` · `Sentence Transformers` · `Ollama (Local LLMs)` · `Streamlit` · `RAG`
 
 [explore intelliask →](https://github.com/Shivangid2904/Intelligent-Question-Answering-System)
 
@@ -74,11 +70,11 @@ A local-first, privacy-preserving Retrieval-Augmented Generation (RAG) platform.
 #### ☁️ [CVE Vulnerability Intelligence Platform](https://github.com/Shivangid2904/cve-vulnerability-intelligence-platform)
 > *"When a critical vulnerability appears in the middle of the night, security teams shouldn't have to discover it manually."*
 
-An event-driven serverless threat intelligence pipeline built entirely on AWS to eliminate idle compute overhead. The system ingests upstream CVE feeds into Amazon S3, triggering AWS Lambda to parse records and classify vulnerability severity (Critical / Medium / Low). State is persisted in DynamoDB, cross-referenced against client technology profiles, and fanned out through Amazon EventBridge and Amazon SNS for instant email and webhook alert dispatch under tight IAM boundaries.
+A serverless AWS pipeline that automates vulnerability tracking and alerting. Incoming CVE feeds land in S3 and trigger Lambda functions to parse records and classify severity (Critical / Medium / Low). Structured vulnerability data is stored in DynamoDB, cross-referenced against client technology stacks, and routed through EventBridge and SNS to dispatch instant email alerts under least-privilege IAM policies.
 
 `S3 (CVE Ingestion)` → `Lambda (Parsing & Severity)` → `DynamoDB` → `Lambda (Stack Matching)` → `SNS Alerting`
 
-`AWS Lambda` · `DynamoDB` · `Amazon S3` · `EventBridge` · `Amazon SNS` · `AWS IAM` · `Python`
+`AWS Lambda` · `DynamoDB` · `S3` · `EventBridge` · `SNS` · `IAM` · `Python`
 
 [explore cve-platform →](https://github.com/Shivangid2904/cve-vulnerability-intelligence-platform)
 
@@ -87,7 +83,7 @@ An event-driven serverless threat intelligence pipeline built entirely on AWS to
 #### 🪐 [ExoLife — Exoplanet Habitability Assessment](https://github.com/Shivangid2904/ExoLife-Exoplanet-Habitability-Assessment)
 > *"What if machine learning could help separate meaningful planetary signals from an extremely imbalanced astronomical dataset?"*
 
-A scientific ML platform benchmarking habitability predictions across 3,757 exoplanets from the NASA Exoplanet Archive. Addressing an extreme 75.7:1 class imbalance (only 49 habitable vs 3,708 non-habitable candidates), the project develops both a baseline model and a **Physics-Informed Proxy Model**. The proxy model intentionally excludes direct rule-based labeling features (radius, equilibrium temperature, insolation flux) to avoid target leakage, forcing the model to learn underlying astrophysical relationships from indirect stellar and orbital parameters (`st_teff`, `st_mass`, `pl_orbper`, `pl_orbeccen`, `st_met`, `sy_dist`). Benchmarked across Random Forest and XGBoost with Stratified 5-Fold Cross-Validation, PR-AUC evaluation, and local SHAP waterfall explainability.
+An interactive scientific ML project evaluating habitability across 3,757 exoplanets from the NASA Exoplanet Archive. To address an extreme 75.7:1 class imbalance (only 49 habitable candidates) and avoid target leakage, ExoLife introduces a Physics-Informed Proxy Model that strips direct labeling features (radius, equilibrium temperature, flux) to learn true astrophysical relationships from indirect stellar and orbital parameters. Benchmarked across Random Forest and XGBoost with Stratified 5-Fold Cross-Validation, PR-AUC, and local SHAP waterfall explainability.
 
 `Python` · `scikit-learn` · `XGBoost` · `SHAP Explainability` · `NASA Archive` · `pandas` · `Streamlit`
 
@@ -103,34 +99,28 @@ The tools and environments I reach for when turning curiosity into working code:
   `Python` · `scikit-learn` · `XGBoost` · `FAISS` · `Sentence Transformers` · `Ollama` · `SHAP` · `pandas` · `NumPy` · `Streamlit`
 
 * **Cloud Infrastructure & Serverless**  
-  `AWS Lambda` · `Amazon DynamoDB` · `Amazon S3` · `EventBridge` · `Amazon SNS` · `AWS IAM` *(AWS Certified Cloud Practitioner)*
+  `AWS Lambda` · `DynamoDB` · `S3` · `EventBridge` · `SNS` · `IAM`
 
 * **Core Engineering & Systems**  
-  `Java` · `JavaScript` · `PostgreSQL / PostGIS` · `MySQL` · `Git` · `Linux / Bash`
+  `Java` · `JavaScript` · `PostgreSQL/PostGIS` · `MySQL` · `Git` · `Linux/Bash`
 
 ---
 
 ### 🌌 Things I'm Curious About
 
-A few areas I'm currently exploring in my reading, experiments, and side research:
+A few topics I'm currently exploring through reading, side experiments, and prototypes:
 
-* **Advanced Retrieval & Synthesis:** Exploring hybrid dense/sparse search, contextual cross-encoder re-ranking, and GraphRAG to handle multi-hop reasoning over complex knowledge graphs.
-* **Model Calibration & Interpretability:** Designing models that express genuine uncertainty rather than confident hallucinations, combining physics-informed priors with SHAP feature attributions.
-* **Scientific Machine Learning:** Applying learning methods to space telemetry and astrophysics catalogs where signal-to-noise ratios are challenging and ground truth is rare.
-* **Resilient Distributed Architectures:** Designing event-driven serverless architectures with well-bounded failure domains and zero unnecessary idle compute.
+* **Advanced Retrieval:** Experimenting with hybrid dense/sparse search, cross-encoder re-ranking, and GraphRAG to see how models handle multi-hop questions over structured knowledge.
+* **Model Calibration & Explainability:** Exploring how to make ML models communicate uncertainty honestly rather than guessing, paired with SHAP to understand feature influence.
+* **Scientific ML:** Reading about how statistical learning is applied to noisy space telemetry and planetary spectra where ground truth is rare.
+* **Serverless Cloud Patterns:** Learning how to design clean event-driven architectures with well-defined boundaries and minimal idle overhead.
 
 ---
 
 ### 🌷 Past Leadership
 
 * **Former Lead — Smart Tech Club**  
-  Led technical initiatives and organized campus hackathons, technical workshops, and peer-learning programs across AI/ML, Cloud Computing, Cybersecurity, Big Data, and IoT.
-
----
-
-### 📜 Certifications
-
-* **AWS Certified Cloud Practitioner** — Amazon Web Services *(2026)*
+  Led technical initiatives and organized campus hackathons, hands-on workshops, and collaborative sessions across AI/ML, Cloud, and Cybersecurity.
 
 ---
 
@@ -140,7 +130,7 @@ A few areas I'm currently exploring in my reading, experiments, and side researc
 
 <br/>
 
-<sub>Curious about any of these systems or want to discuss AI, cloud pipelines, or astrophysics?</sub><br/>
+<sub>Feel free to reach out to chat about AI, cloud systems, or exoplanets.</sub><br/>
 <sub><a href="https://www.linkedin.com/in/shivangi-dubey-1783511a6">LinkedIn</a> &nbsp;·&nbsp; <a href="mailto:shivangi.d2904@gmail.com">shivangi.d2904@gmail.com</a></sub>
 
 </div>
