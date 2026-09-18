@@ -1,136 +1,122 @@
 <div align="center">
 
-<!-- Typing SVG Header -->
-<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&size=28&duration=3200&pause=1200&color=F472B6&center=true&vCenter=true&width=620&lines=%E2%9C%A8+Hi+there%2C+I'm+Shivangi!+%F0%9F%8C%B8;AI+%26+ML+Specialist+%F0%9F%A7%A0%E2%9C%A8;AWS+Certified+Cloud+Practitioner+%E2%98%81%EF%B8%8F;Building+with+curiosity+%26+care+%F0%9F%92%9C" alt="Shivangi Dubey Typing Header" />
+<br/>
+
+<img src="https://readme-typing-svg.demolab.com?font=Fraunces&weight=500&size=26&duration=3800&pause=1200&color=F4A7BB&center=true&vCenter=true&width=650&lines=Shivangi+Dubey;ai+%26+machine+learning+%E2%80%A2+cloud+architecture;asking+questions+with+data+%26+code" alt="Shivangi Dubey" />
 
 <p align="center">
-  <b>Computer Science (AI & ML) @ SRM University AP</b> • <b>AWS Certified Cloud Practitioner</b><br/>
-  <i>Crafting intelligent AI systems, serverless cloud architectures, and exploring cosmic data 🪐✨</i>
+  <sub>SRM University AP &nbsp;·&nbsp; AWS Certified Cloud Practitioner &nbsp;·&nbsp; AI & ML Specialization</sub>
 </p>
 
-<!-- Cute Social & Contact Badges -->
 <p align="center">
-  <a href="https://www.linkedin.com/in/shivangi-dubey-1783511a6" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-F472B6?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>&nbsp;
-  <a href="mailto:shivangi.d2904@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-C084FC?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-  </a>&nbsp;
-  <a href="https://drive.google.com/file/d/1lCXme23zL50PrehgWtcn2wvx_QKc_ObN/view?usp=sharing" target="_blank">
-    <img src="https://img.shields.io/badge/Resume-FB7185?style=for-the-badge&logo=googledrive&logoColor=white" alt="Resume" />
-  </a>&nbsp;
-  <img src="https://komarev.com/ghpvc/?username=Shivangid2904&style=for-the-badge&color=F472B6&label=Profile+Views&labelColor=231934" alt="Visitors" />
-</p>
-
-</div>
-
----
-
-### 🌸 About Me
-
-Hello! I'm **Shivangi**, a Computer Science student specializing in **Artificial Intelligence & Machine Learning** at **SRM University AP**. I'm passionate about developing thoughtful, human-centric AI solutions and resilient cloud-native systems.
-
-- 🧠 **Focus Areas:** Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), and Explainable AI (SHAP)
-- 🛡️ **AI for Good:** Designing intelligent systems that solve real social issues, such as women's safety route optimization
-- ☁️ **Cloud Native:** AWS Certified Cloud Practitioner with hands-on experience building event-driven serverless platforms
-- 🪐 **Curiosity:** Applying machine learning to astrophysics and planetary datasets
-- 💫 **Community:** Core Team Member at **Smart Tech Club**, mentoring peers and organizing tech hackathons & workshops
-
----
-
-### 🎀 Featured Creations
-
-#### 🌸 [SafeHer AI](https://github.com/Shivangid2904/safeher-ai) `In Progress`
-> *AI-powered women’s safety prototype delivering intelligent risk assessment and route guidance.*
-- **What it does:** Computes real-time dynamic risk scores (0–100) using ML models, calculates optimal safe walking routes using Dijkstra's algorithm, and coordinates automated emergency alerts.
-- **Tech Stack:** `Python` • `Machine Learning` • `Dijkstra Algorithm` • `Streamlit` • `Geolocation API`
-
----
-
-#### 🧠 [Intelligent Question Answering System](https://github.com/Shivangid2904/Intelligent-Question-Answering-System)
-> *100% private, local Retrieval-Augmented Generation (RAG) system for document intelligence.*
-- **What it does:** Semantic vector search over PDF documents using FAISS and Sentence Transformers. Powered by local LLMs via Ollama — zero data leakage, zero API bills, with hybrid relevance scoring and session memory.
-- **Tech Stack:** `FAISS` • `Ollama` • `Sentence-Transformers` • `Streamlit` • `Python` • `RAG`
-
----
-
-#### ☁️ [CVE Vulnerability Intelligence Platform](https://github.com/Shivangid2904/cve-vulnerability-intelligence-platform)
-> *Serverless cybersecurity threat monitoring and alert dispatch on AWS.*
-- **What it does:** Automates ingestion and severity classification (Critical / Medium / Low) of global CVE vulnerability records. Dispatches instant SNS push alerts upon high-risk detection.
-- **Tech Stack:** `AWS Lambda` • `DynamoDB` • `Amazon SNS` • `EventBridge` • `Cognito` • `Python`
-
----
-
-#### 🪐 [Exoplanet Habitability Prediction](https://github.com/Shivangid2904/Exoplanet-Habitability-Prediction)
-> *Predictive machine learning models trained on NASA planetary mission data.*
-- **What it does:** Preprocesses and evaluates stellar and planetary features to classify habitability likelihood across deep-space exoplanet discoveries.
-- **Tech Stack:** `scikit-learn` • `pandas` • `NumPy` • `Data Science` • `Astrophysics`
-
----
-
-#### 💭 [Context-Aware Emotion AI](https://github.com/Shivangid2904/context-aware-emotion-ai)
-> *Affective computing ML system with uncertainty-aware recommendations.*
-- **What it does:** Evaluates emotional intensity and nuance from text and contextual cues, providing calibrated, empathetic action recommendations.
-- **Tech Stack:** `NLP` • `scikit-learn` • `Explainable AI` • `Python`
-
----
-
-### 🔮 Tech Toolbox
-
-<div align="center">
-
-<table>
-  <tr>
-    <td align="center" width="25%"><b>🧠 AI & Data</b></td>
-    <td>
-      <img src="https://img.shields.io/badge/Python-2D1B4E?style=flat-square&logo=python&logoColor=F472B6" alt="Python" />
-      <img src="https://img.shields.io/badge/scikit--learn-2D1B4E?style=flat-square&logo=scikit-learn&logoColor=F472B6" alt="scikit-learn" />
-      <img src="https://img.shields.io/badge/pandas-2D1B4E?style=flat-square&logo=pandas&logoColor=F472B6" alt="pandas" />
-      <img src="https://img.shields.io/badge/NumPy-2D1B4E?style=flat-square&logo=numpy&logoColor=F472B6" alt="NumPy" />
-      <img src="https://img.shields.io/badge/FAISS-2D1B4E?style=flat-square&logo=meta&logoColor=F472B6" alt="FAISS" />
-      <img src="https://img.shields.io/badge/Ollama-2D1B4E?style=flat-square&logo=ollama&logoColor=F472B6" alt="Ollama" />
-      <img src="https://img.shields.io/badge/Streamlit-2D1B4E?style=flat-square&logo=streamlit&logoColor=F472B6" alt="Streamlit" />
-      <img src="https://img.shields.io/badge/SHAP-2D1B4E?style=flat-square&logoColor=F472B6" alt="SHAP" />
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="25%"><b>☁️ Cloud & Backend</b></td>
-    <td>
-      <img src="https://img.shields.io/badge/AWS-2D1B4E?style=flat-square&logo=amazonaws&logoColor=C084FC" alt="AWS" />
-      <img src="https://img.shields.io/badge/AWS_Lambda-2D1B4E?style=flat-square&logo=awslambda&logoColor=C084FC" alt="AWS Lambda" />
-      <img src="https://img.shields.io/badge/DynamoDB-2D1B4E?style=flat-square&logo=amazondynamodb&logoColor=C084FC" alt="DynamoDB" />
-      <img src="https://img.shields.io/badge/Amazon_S3-2D1B4E?style=flat-square&logo=amazons3&logoColor=C084FC" alt="Amazon S3" />
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="25%"><b>💻 Languages & Core</b></td>
-    <td>
-      <img src="https://img.shields.io/badge/Java-2D1B4E?style=flat-square&logo=openjdk&logoColor=FB7185" alt="Java" />
-      <img src="https://img.shields.io/badge/JavaScript-2D1B4E?style=flat-square&logo=javascript&logoColor=FB7185" alt="JavaScript" />
-      <img src="https://img.shields.io/badge/MySQL-2D1B4E?style=flat-square&logo=mysql&logoColor=FB7185" alt="MySQL" />
-      <img src="https://img.shields.io/badge/Git-2D1B4E?style=flat-square&logo=git&logoColor=FB7185" alt="Git" />
-    </td>
-  </tr>
-</table>
-
-</div>
-
----
-
-### 🏆 Recognitions & Certifications
-
-- **AWS Certified Cloud Practitioner** — Amazon Web Services *(2026)*
-- **Technology Job Simulation** — Deloitte Australia via Forage *(2025)*
-- **Core Team Member** — Smart Tech Club, SRM University AP
-
----
-
-### 📊 GitHub Activity
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Shivangid2904&show_icons=true&bg_color=191226&title_color=F472B6&text_color=E9D5FF&icon_color=C084FC&border_color=3B2252&border_radius=12&rank_icon=github" height="160" alt="Shivangi's GitHub Stats" />
+  <a href="https://www.linkedin.com/in/shivangi-dubey-1783511a6">
+    <img src="https://img.shields.io/badge/linkedin-f2c9d8?style=flat&logo=linkedin&logoColor=2d182b&labelColor=edd6e0" alt="LinkedIn"/>
+  </a>
   &nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Shivangid2904&layout=compact&bg_color=191226&title_color=F472B6&text_color=E9D5FF&icon_color=C084FC&border_color=3B2252&border_radius=12&langs_count=5" height="160" alt="Shivangi's Top Languages" />
+  <a href="mailto:shivangi.d2904@gmail.com">
+    <img src="https://img.shields.io/badge/email-e0cde8?style=flat&logo=gmail&logoColor=2d182b&labelColor=edd6e0" alt="Email"/>
+  </a>
+  &nbsp;
+  <a href="https://drive.google.com/file/d/1lCXme23zL50PrehgWtcn2wvx_QKc_ObN/view?usp=sharing">
+    <img src="https://img.shields.io/badge/résumé-f7d9dc?style=flat&logo=googledrive&logoColor=2d182b&labelColor=edd6e0" alt="Resume"/>
+  </a>
+  &nbsp;
+  <a href="https://github.com/Shivangid2904">
+    <img src="https://komarev.com/ghpvc/?username=Shivangid2904&style=flat&color=f2c9d8&label=reads&labelColor=2a1d2e" alt="Visitors"/>
+  </a>
+</p>
+
+<br/>
+
+</div>
+
+---
+
+### 🌸 About
+
+I study Computer Science with an AI & Machine Learning specialization at SRM University AP. 
+
+To me, engineering is at its best when it begins with an honest question: *What if a navigation tool understood when a neighborhood feels vulnerable? Can an exoplanet’s habitability be spotted mathematically from noisy telescope signals? Why route confidential documents to external APIs when small, local models can reason about them privately?*
+
+I spend my time oscillating between two worlds: **machine intelligence** (LLMs, RAG pipelines, explainable models, and astrophysics datasets) and **cloud architecture** (event-driven serverless systems on AWS). When I build, I care about data privacy, verifiable metrics, and writing systems that are intuitive and respectful of the humans who interact with them.
+
+Outside of solitary tinkering, I'm a core team member at **Smart Tech Club**, where I help organize hackathons, coordinate workshops, and foster technical curiosity across campus.
+
+---
+
+### 💭 Selected Projects
+
+Each of these started from a specific problem that wouldn't leave my head:
+
+#### [SafeHer AI](https://github.com/Shivangid2904/safeher-ai) `Active Prototype`
+> *"What if a map could understand when a route feels unsafe, rather than just calculating the shortest distance?"*
+
+Conventional routing algorithms optimize purely for travel time. SafeHer AI experiments with safety-first navigation for women. It pairs a dynamic risk-scoring model (0–100) based on contextual urban variables with a modified Dijkstra pathfinder to compute low-risk transit corridors, wired to an automated real-time dispatch mechanism for emergency alerts.
+
+`Python` · `Machine Learning` · `Graph Algorithms (Dijkstra)` · `Streamlit` · `Location Telemetry`
+
+<br/>
+
+#### [Intelligent Question Answering System](https://github.com/Shivangid2904/Intelligent-Question-Answering-System)
+> *"Why send proprietary documents across the internet when your own hardware can read and reason over them?"*
+
+A local-first, privacy-preserving Retrieval-Augmented Generation (RAG) platform. Instead of leaning on hosted APIs that compromise user data, it performs dense semantic retrieval across dense PDF corpora using Sentence Transformers and a local FAISS vector index. Answers are generated by an on-device quantized LLM via Ollama, featuring hybrid relevance scoring and persistent multi-turn conversational memory.
+
+`FAISS` · `Ollama (Local LLMs)` · `Sentence Transformers` · `Streamlit` · `Python` · `Vector Retrieval`
+
+<br/>
+
+#### [CVE Vulnerability Intelligence Platform](https://github.com/Shivangid2904/cve-vulnerability-intelligence-platform)
+> *"When a critical security vulnerability drops in the middle of the night, human triage shouldn't be the bottleneck."*
+
+An event-driven serverless ingestion and alerting pipeline built entirely on AWS. The system monitors upstream security vulnerability streams, automates CVE parsing and severity classification (Critical / Medium / Low), persists audit state in DynamoDB, and dispatches instant SNS push alerts. Designed around zero-server maintenance, fine-grained IAM boundaries, and cost-effective event routing.
+
+`AWS Lambda` · `DynamoDB` · `Amazon SNS` · `EventBridge` · `Cognito` · `Python` · `Cloud Architecture`
+
+<br/>
+
+#### [Exoplanet Habitability Prediction](https://github.com/Shivangid2904/Exoplanet-Habitability-Prediction)
+> *"How do we find habitable worlds buried in light-years of messy telescope telemetry?"*
+
+Trained classification models on archival NASA Kepler and TESS planetary transit datasets. The project addresses extreme class imbalance and noisy astronomical features to predict whether an observed exoplanet possesses orbital and physical characteristics capable of supporting liquid water.
+
+`scikit-learn` · `pandas` · `NumPy` · `Astrophysics Data` · `Data Cleaning & Feature Selection`
+
+<br/>
+
+#### [Context-Aware Emotion AI](https://github.com/Shivangid2904/context-aware-emotion-ai)
+> *"Sentiment analysis is easy when tone is obvious. How do we teach models to know when they are uncertain?"*
+
+An affective computing experiment that analyzes fine-grained emotional intensity from text along with conversational context. Rather than forcing brittle point predictions, the pipeline models output confidence to surface uncertainty-aware recommendations for empathetic responses.
+
+`NLP` · `scikit-learn` · `Explainable AI (SHAP)` · `Python` · `Affective Computing`
+
+---
+
+### 🛠️ Workbench
+
+The tools and technologies I use to turn questions into functioning systems:
+
+- **AI & Intelligent Systems:** Python · scikit-learn · FAISS · Sentence Transformers · Ollama · SHAP · pandas · NumPy · Streamlit
+- **Cloud & Serverless:** AWS Lambda · Amazon DynamoDB · Amazon S3 · EventBridge · Amazon SNS · AWS IAM *(AWS Certified Cloud Practitioner)*
+- **Core Engineering:** Java · JavaScript · MySQL · Git · Bash / Linux environments
+
+---
+
+### 🌌 Current Curiosities & Explorations
+
+- **Advanced Retrieval Architectures:** Looking deeper into contextual re-ranking, hybrid sparse/dense search, and GraphRAG for complex multi-hop reasoning.
+- **Model Explainability & Calibration:** Understanding not just *what* an ML model predicts, but why, and measuring whether its confidence scores actually match reality.
+- **Scientific ML:** Exploring how machine learning methods intersect with deep space exploration and sensor telemetry.
+
+---
+
+### 📊 Activity
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Shivangid2904&show_icons=true&bg_color=1c1524&title_color=f4a7bb&text_color=e4d2ea&icon_color=cfa0dd&border_color=382744&border_radius=10&rank_icon=github" height="150" alt="Shivangi's GitHub Stats" />
+  &nbsp;
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Shivangid2904&layout=compact&bg_color=1c1524&title_color=f4a7bb&text_color=e4d2ea&icon_color=cfa0dd&border_color=382744&border_radius=10&langs_count=5" height="150" alt="Shivangi's Top Languages" />
 </div>
 
 <br/>
@@ -139,10 +125,7 @@ Hello! I'm **Shivangi**, a Computer Science student specializing in **Artificial
 
 <div align="center">
 
-🌸 *“Always building with curiosity, empathy, and code.”* 🌸
-
-<p>
-  <sub>Have a cool project or research idea? Let's connect! 💌 Drop a note on <a href="https://www.linkedin.com/in/shivangi-dubey-1783511a6">LinkedIn</a> or via <a href="mailto:shivangi.d2904@gmail.com">Email</a>.</sub>
-</p>
+<sub>Curious about any of these systems or want to discuss AI, cloud pipelines, or astrophysics?</sub><br/>
+<sub>Always happy to exchange ideas via <a href="https://www.linkedin.com/in/shivangi-dubey-1783511a6">LinkedIn</a> or <a href="mailto:shivangi.d2904@gmail.com">shivangi.d2904@gmail.com</a>.</sub>
 
 </div>
