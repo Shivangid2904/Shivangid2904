@@ -37,7 +37,7 @@ Most of what I build starts with a question I can't quite shake:
 - *Can we find subtle signs of habitability in messy, imbalanced astronomical data?*
 - *Why send confidential documents to external APIs when local models can search and reason over them on your own machine?*
 
-I spend most of my time exploring the space between machine learning and cloud systems—building prototypes, learning where models break, and figuring out how to turn ideas into clean, functional software.
+I spend most of my time exploring the space between machine learning and cloud systems—building prototypes, learning where models break, and figuring out how to turn ideas into clean, functional software. I tend to gravitate toward projects that sit somewhere between useful, slightly unusual, and technically challenging.
 
 ---
 
@@ -46,7 +46,7 @@ I spend most of my time exploring the space between machine learning and cloud s
 #### 🌸 [SafeHer AI](https://github.com/Shivangid2904/safeher-ai)
 > *"What if a map could understand when a route feels unsafe — rather than just calculating the shortest distance?"*
 
-A safety-aware navigation prototype that explores routing based on personal safety rather than pure travel time. The system pulls road networks from OpenStreetMap into PostGIS and builds a directed graph with NetworkX. It calculates a segment-level SafeHer Risk Index (0–100) using lighting, road types, and proximity to safe havens (like hospitals and police stations), then runs a modified Dijkstra algorithm to find lower-risk paths.
+A safety-aware navigation prototype exploring routing based on personal safety rather than pure travel time. The system imports road networks from OpenStreetMap into PostgreSQL/PostGIS, builds a spatial graph with NetworkX, and computes a segment-level SafeHer Risk Index (0–100). A modified Dijkstra algorithm then balances travel efficiency with safety to recommend lower-risk paths.
 
 `Python` · `PostGIS` · `NetworkX` · `OSMnx` · `Dijkstra Algorithm` · `Flask API` · `Streamlit`
 
@@ -83,7 +83,7 @@ A serverless AWS pipeline that automates vulnerability tracking and alerting. In
 #### 🪐 [ExoLife — Exoplanet Habitability Assessment](https://github.com/Shivangid2904/ExoLife-Exoplanet-Habitability-Assessment)
 > *"What if machine learning could help separate meaningful planetary signals from an extremely imbalanced astronomical dataset?"*
 
-An interactive scientific ML project evaluating habitability across 3,757 exoplanets from the NASA Exoplanet Archive. To address an extreme 75.7:1 class imbalance (only 49 habitable candidates) and avoid target leakage, ExoLife introduces a Physics-Informed Proxy Model that strips direct labeling features (radius, equilibrium temperature, flux) to learn true astrophysical relationships from indirect stellar and orbital parameters. Benchmarked across Random Forest and XGBoost with Stratified 5-Fold Cross-Validation, PR-AUC, and local SHAP waterfall explainability.
+A scientific ML project evaluating habitability across 3,757 exoplanets from the NASA Exoplanet Archive. To address a severe 75.7:1 class imbalance and prevent target leakage, ExoLife pairs a baseline model with a **Physics-Informed Proxy Model** that learns true astrophysical relationships from indirect stellar and orbital indicators rather than direct labeling features. Benchmarked across Random Forest and XGBoost with Stratified 5-Fold Cross-Validation, PR-AUC, and local SHAP explainability.
 
 `Python` · `scikit-learn` · `XGBoost` · `SHAP Explainability` · `NASA Archive` · `pandas` · `Streamlit`
 
