@@ -106,7 +106,7 @@ The tools and environments I reach for when turning curiosity into working code:
   `AWS Lambda` · `Amazon DynamoDB` · `Amazon S3` · `EventBridge` · `Amazon SNS` · `AWS IAM` *(AWS Certified Cloud Practitioner)*
 
 * **Core Engineering & Systems**  
-  `Java (SE 17)` · `JavaScript` · `PostgreSQL / PostGIS` · `MySQL` · `Git` · `Linux / Bash`
+  `Java` · `JavaScript` · `PostgreSQL / PostGIS` · `MySQL` · `Git` · `Linux / Bash`
 
 ---
 
@@ -131,7 +131,6 @@ A few areas I'm currently exploring in my reading, experiments, and side researc
 ### 📜 Certifications
 
 * **AWS Certified Cloud Practitioner** — Amazon Web Services *(2026)*
-* **Oracle Certified Professional: Java SE 17 Developer** — Oracle
 
 ---
 
