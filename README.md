@@ -10,19 +10,15 @@
 
 <p align="center">
   <a href="https://www.linkedin.com/in/shivangi-dubey-1783511a6">
-    <img src="https://img.shields.io/badge/linkedin-f2c9d8?style=flat&logo=linkedin&logoColor=2d182b&labelColor=edd6e0" alt="LinkedIn"/>
+    <img src="https://img.shields.io/badge/linkedin-F4A7BB?style=flat&logo=linkedin&logoColor=2D182B" alt="LinkedIn"/>
   </a>
   &nbsp;
   <a href="mailto:shivangi.d2904@gmail.com">
-    <img src="https://img.shields.io/badge/email-e0cde8?style=flat&logo=gmail&logoColor=2d182b&labelColor=edd6e0" alt="Email"/>
+    <img src="https://img.shields.io/badge/email-D8B4E2?style=flat&logo=gmail&logoColor=2D182B" alt="Email"/>
   </a>
   &nbsp;
   <a href="https://drive.google.com/file/d/1lCXme23zL50PrehgWtcn2wvx_QKc_ObN/view?usp=sharing">
-    <img src="https://img.shields.io/badge/résumé-f7d9dc?style=flat&logo=googledrive&logoColor=2d182b&labelColor=edd6e0" alt="Resume"/>
-  </a>
-  &nbsp;
-  <a href="https://github.com/Shivangid2904">
-    <img src="https://komarev.com/ghpvc/?username=Shivangid2904&style=flat&color=f2c9d8&label=reads&labelColor=2a1d2e" alt="Visitors"/>
+    <img src="https://img.shields.io/badge/r%C3%A9sum%C3%A9-FFB7D5?style=flat&logo=googledrive&logoColor=2D182B" alt="Resume"/>
   </a>
 </p>
 
@@ -34,98 +30,118 @@
 
 ### 🌸 About
 
-I study Computer Science with an AI & Machine Learning specialization at SRM University AP. 
+I study Computer Science with an AI & Machine Learning specialization at SRM University AP.
 
-To me, engineering is at its best when it begins with an honest question: *What if a navigation tool understood when a neighborhood feels vulnerable? Can an exoplanet’s habitability be spotted mathematically from noisy telescope signals? Why route confidential documents to external APIs when small, local models can reason about them privately?*
+For me, building software always starts with curiosity: *What if a navigation system understood when an area feels unsafe? Can we mathematically catch the quiet signs of a habitable planet in noisy telescope data? Why send confidential documents across the internet when a local model can reason about them on your own machine?*
 
-I spend my time oscillating between two worlds: **machine intelligence** (LLMs, RAG pipelines, explainable models, and astrophysics datasets) and **cloud architecture** (event-driven serverless systems on AWS). When I build, I care about data privacy, verifiable metrics, and writing systems that are intuitive and respectful of the humans who interact with them.
+My work naturally bridges two core areas: **machine intelligence** and **cloud architecture**. I care about designing systems that are grounded in solid mathematics, respectful of privacy, and resilient when deployed into production.
 
-Outside of solitary tinkering, I'm a core team member at **Smart Tech Club**, where I help organize hackathons, coordinate workshops, and foster technical curiosity across campus.
+My technical interests gravitate around:
+- 🧠 **Machine Intelligence:** Local-first RAG pipelines, dense vector retrieval, and model explainability
+- ☁️ **Cloud Systems:** Event-driven serverless architectures, decoupled pipelines, and least-privilege security on AWS
+- 🌌 **Scientific & Space Data:** Machine learning applied to astronomical catalogs and planetary telemetry
+- 🔐 **Cybersecurity:** Automated vulnerability ingestion and threat intelligence
+- 🌸 **Human-Centered Technology:** Designing intelligent prototypes that directly protect and assist people
 
 ---
 
-### 💭 Selected Projects
+### ✦ Things I've Been Curious Enough to Build
 
-Each of these started from a specific problem that wouldn't leave my head:
+#### 🌸 [SafeHer AI](https://github.com/Shivangid2904/safeher-ai) `Active Prototype`
+> *"What if a map could understand when a route feels unsafe — rather than just calculating the shortest distance?"*
 
-#### [SafeHer AI](https://github.com/Shivangid2904/safeher-ai) `Active Prototype`
-> *"What if a map could understand when a route feels unsafe, rather than just calculating the shortest distance?"*
+A safety-aware geospatial navigation prototype designed to prioritize personal safety over pure transit speed. The system imports road networks from OpenStreetMap into PostgreSQL/PostGIS with GiST spatial indexing and builds a directed graph with NetworkX. It computes a segment-by-segment **SafeHer Risk Index (SRI 0–100)** incorporating street lighting, road hierarchy, and proximity buffers around Safe Havens (police stations, hospitals, pharmacies). A modified Dijkstra routing engine evaluates multi-objective paths (`fastest`, `balanced`, `safest`) while dynamically factoring in community incident reports with a 7-day exponential time-decay model.
 
-Conventional routing algorithms optimize purely for travel time. SafeHer AI experiments with safety-first navigation for women. It pairs a dynamic risk-scoring model (0–100) based on contextual urban variables with a modified Dijkstra pathfinder to compute low-risk transit corridors, wired to an automated real-time dispatch mechanism for emergency alerts.
+`Python` · `PostGIS` · `NetworkX` · `OSMnx` · `Dijkstra Algorithm` · `Flask API` · `Streamlit`
 
-`Python` · `Machine Learning` · `Graph Algorithms (Dijkstra)` · `Streamlit` · `Location Telemetry`
+[explore safeher-ai →](https://github.com/Shivangid2904/safeher-ai)
 
-<br/>
+---
 
-#### [Intelligent Question Answering System](https://github.com/Shivangid2904/Intelligent-Question-Answering-System)
-> *"Why send proprietary documents across the internet when your own hardware can read and reason over them?"*
+#### 🧠 [IntelliAsk — Intelligent Question Answering System](https://github.com/Shivangid2904/Intelligent-Question-Answering-System)
+> *"Why send private documents to an external API when your own machine can search and reason over them?"*
 
-A local-first, privacy-preserving Retrieval-Augmented Generation (RAG) platform. Instead of leaning on hosted APIs that compromise user data, it performs dense semantic retrieval across dense PDF corpora using Sentence Transformers and a local FAISS vector index. Answers are generated by an on-device quantized LLM via Ollama, featuring hybrid relevance scoring and persistent multi-turn conversational memory.
+A local-first, privacy-preserving Retrieval-Augmented Generation (RAG) platform. To ensure zero data leakage and avoid recurring API costs, IntelliAsk processes documents locally: chunking PDFs, generating dense vector embeddings via Sentence Transformers, and indexing them in FAISS. The pipeline pairs semantic vector search with keyword matching for hybrid relevance scoring, feeding the most relevant passages to on-device quantized LLMs via Ollama for grounded answer generation with supporting passage attribution and persistent session history.
 
-`FAISS` · `Ollama (Local LLMs)` · `Sentence Transformers` · `Streamlit` · `Python` · `Vector Retrieval`
+`documents` → `Sentence Transformers` → `FAISS vector index` → `hybrid retrieval` → `local LLM (Ollama)` → `grounded answer`
 
-<br/>
+`Python` · `FAISS` · `Sentence Transformers` · `Ollama (Local LLMs)` · `Streamlit` · `RAG Architecture`
 
-#### [CVE Vulnerability Intelligence Platform](https://github.com/Shivangid2904/cve-vulnerability-intelligence-platform)
-> *"When a critical security vulnerability drops in the middle of the night, human triage shouldn't be the bottleneck."*
+[explore intelliask →](https://github.com/Shivangid2904/Intelligent-Question-Answering-System)
 
-An event-driven serverless ingestion and alerting pipeline built entirely on AWS. The system monitors upstream security vulnerability streams, automates CVE parsing and severity classification (Critical / Medium / Low), persists audit state in DynamoDB, and dispatches instant SNS push alerts. Designed around zero-server maintenance, fine-grained IAM boundaries, and cost-effective event routing.
+---
 
-`AWS Lambda` · `DynamoDB` · `Amazon SNS` · `EventBridge` · `Cognito` · `Python` · `Cloud Architecture`
+#### ☁️ [CVE Vulnerability Intelligence Platform](https://github.com/Shivangid2904/cve-vulnerability-intelligence-platform)
+> *"When a critical vulnerability appears in the middle of the night, security teams shouldn't have to discover it manually."*
 
-<br/>
+An event-driven serverless threat intelligence pipeline built entirely on AWS to eliminate idle compute overhead. The system ingests upstream CVE feeds into Amazon S3, triggering AWS Lambda to parse records and classify vulnerability severity (Critical / Medium / Low). State is persisted in DynamoDB, cross-referenced against client technology profiles, and fanned out through Amazon EventBridge and Amazon SNS for instant email and webhook alert dispatch under tight IAM boundaries.
 
-#### [Exoplanet Habitability Prediction](https://github.com/Shivangid2904/Exoplanet-Habitability-Prediction)
-> *"How do we find habitable worlds buried in light-years of messy telescope telemetry?"*
+`S3 (CVE Ingestion)` → `Lambda (Parsing & Severity)` → `DynamoDB` → `Lambda (Stack Matching)` → `SNS Alerting`
 
-Trained classification models on archival NASA Kepler and TESS planetary transit datasets. The project addresses extreme class imbalance and noisy astronomical features to predict whether an observed exoplanet possesses orbital and physical characteristics capable of supporting liquid water.
+`AWS Lambda` · `DynamoDB` · `Amazon S3` · `EventBridge` · `Amazon SNS` · `AWS IAM` · `Python`
 
-`scikit-learn` · `pandas` · `NumPy` · `Astrophysics Data` · `Data Cleaning & Feature Selection`
+[explore cve-platform →](https://github.com/Shivangid2904/cve-vulnerability-intelligence-platform)
 
-<br/>
+---
 
-#### [Context-Aware Emotion AI](https://github.com/Shivangid2904/context-aware-emotion-ai)
-> *"Sentiment analysis is easy when tone is obvious. How do we teach models to know when they are uncertain?"*
+#### 🪐 [ExoLife — Exoplanet Habitability Assessment](https://github.com/Shivangid2904/ExoLife-Exoplanet-Habitability-Assessment)
+> *"What if machine learning could help separate meaningful planetary signals from an extremely imbalanced astronomical dataset?"*
 
-An affective computing experiment that analyzes fine-grained emotional intensity from text along with conversational context. Rather than forcing brittle point predictions, the pipeline models output confidence to surface uncertainty-aware recommendations for empathetic responses.
+A scientific ML platform benchmarking habitability predictions across 3,757 exoplanets from the NASA Exoplanet Archive. Addressing an extreme 75.7:1 class imbalance (only 49 habitable vs 3,708 non-habitable candidates), the project develops both a baseline model and a **Physics-Informed Proxy Model**. The proxy model intentionally excludes direct rule-based labeling features (radius, equilibrium temperature, insolation flux) to avoid target leakage, forcing the model to learn underlying astrophysical relationships from indirect stellar and orbital parameters (`st_teff`, `st_mass`, `pl_orbper`, `pl_orbeccen`, `st_met`, `sy_dist`). Benchmarked across Random Forest and XGBoost with Stratified 5-Fold Cross-Validation, PR-AUC evaluation, and local SHAP waterfall explainability.
 
-`NLP` · `scikit-learn` · `Explainable AI (SHAP)` · `Python` · `Affective Computing`
+`Python` · `scikit-learn` · `XGBoost` · `SHAP Explainability` · `NASA Archive` · `pandas` · `Streamlit`
+
+[explore exolife →](https://github.com/Shivangid2904/ExoLife-Exoplanet-Habitability-Assessment) &nbsp;·&nbsp; [live demo ↗](https://exolife-exoplanet-habitability.onrender.com/)
 
 ---
 
 ### 🛠️ Workbench
 
-The tools and technologies I use to turn questions into functioning systems:
+The tools and environments I reach for when turning curiosity into working code:
 
-- **AI & Intelligent Systems:** Python · scikit-learn · FAISS · Sentence Transformers · Ollama · SHAP · pandas · NumPy · Streamlit
-- **Cloud & Serverless:** AWS Lambda · Amazon DynamoDB · Amazon S3 · EventBridge · Amazon SNS · AWS IAM *(AWS Certified Cloud Practitioner)*
-- **Core Engineering:** Java · JavaScript · MySQL · Git · Bash / Linux environments
+* **Machine Intelligence & Scientific Data**  
+  `Python` · `scikit-learn` · `XGBoost` · `FAISS` · `Sentence Transformers` · `Ollama` · `SHAP` · `pandas` · `NumPy` · `Streamlit`
 
----
+* **Cloud Infrastructure & Serverless**  
+  `AWS Lambda` · `Amazon DynamoDB` · `Amazon S3` · `EventBridge` · `Amazon SNS` · `AWS IAM` *(AWS Certified Cloud Practitioner)*
 
-### 🌌 Current Curiosities & Explorations
-
-- **Advanced Retrieval Architectures:** Looking deeper into contextual re-ranking, hybrid sparse/dense search, and GraphRAG for complex multi-hop reasoning.
-- **Model Explainability & Calibration:** Understanding not just *what* an ML model predicts, but why, and measuring whether its confidence scores actually match reality.
-- **Scientific ML:** Exploring how machine learning methods intersect with deep space exploration and sensor telemetry.
+* **Core Engineering & Systems**  
+  `Java (SE 17)` · `JavaScript` · `PostgreSQL / PostGIS` · `MySQL` · `Git` · `Linux / Bash`
 
 ---
 
-### 📊 Activity
+### 🌌 Things I'm Curious About
+
+A few areas I'm currently exploring in my reading, experiments, and side research:
+
+* **Advanced Retrieval & Synthesis:** Exploring hybrid dense/sparse search, contextual cross-encoder re-ranking, and GraphRAG to handle multi-hop reasoning over complex knowledge graphs.
+* **Model Calibration & Interpretability:** Designing models that express genuine uncertainty rather than confident hallucinations, combining physics-informed priors with SHAP feature attributions.
+* **Scientific Machine Learning:** Applying learning methods to space telemetry and astrophysics catalogs where signal-to-noise ratios are challenging and ground truth is rare.
+* **Resilient Distributed Architectures:** Designing event-driven serverless architectures with well-bounded failure domains and zero unnecessary idle compute.
+
+---
+
+### 🌷 Past Leadership
+
+* **Former Lead — Smart Tech Club**  
+  Led technical initiatives and organized campus hackathons, technical workshops, and peer-learning programs across AI/ML, Cloud Computing, Cybersecurity, Big Data, and IoT.
+
+---
+
+### 📜 Certifications
+
+* **AWS Certified Cloud Practitioner** — Amazon Web Services *(2026)*
+* **Oracle Certified Professional: Java SE 17 Developer** — Oracle
+
+---
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Shivangid2904&show_icons=true&bg_color=1c1524&title_color=f4a7bb&text_color=e4d2ea&icon_color=cfa0dd&border_color=382744&border_radius=10&rank_icon=github" height="150" alt="Shivangi's GitHub Stats" />
-  &nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Shivangid2904&layout=compact&bg_color=1c1524&title_color=f4a7bb&text_color=e4d2ea&icon_color=cfa0dd&border_color=382744&border_radius=10&langs_count=5" height="150" alt="Shivangi's Top Languages" />
-</div>
+
+*always curious, always building.* 🌸
 
 <br/>
 
----
-
-<div align="center">
-
 <sub>Curious about any of these systems or want to discuss AI, cloud pipelines, or astrophysics?</sub><br/>
-<sub>Always happy to exchange ideas via <a href="https://www.linkedin.com/in/shivangi-dubey-1783511a6">LinkedIn</a> or <a href="mailto:shivangi.d2904@gmail.com">shivangi.d2904@gmail.com</a>.</sub>
+<sub><a href="https://www.linkedin.com/in/shivangi-dubey-1783511a6">LinkedIn</a> &nbsp;·&nbsp; <a href="mailto:shivangi.d2904@gmail.com">shivangi.d2904@gmail.com</a></sub>
 
 </div>
